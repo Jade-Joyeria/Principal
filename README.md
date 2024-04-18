@@ -6,4 +6,4 @@ Repositorio principal
   <li><b>Fecha de entrega:</b> 📅 00/00/0000</li>
   <li><b>Estado:</b> 🚧 En desarrollo</li>
   <li><b>Version:</b> 🚀 1</li>
-</ul>
+
