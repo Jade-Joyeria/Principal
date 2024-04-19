@@ -6,9 +6,9 @@ Repositorio principal
   <li><b>Fecha de entrega:</b> 📅 00/00/0000</li>
   <li><b>Estado:</b> 🚧 En desarrollo</li>
   <li><b>Version:</b> 🚀 1</li>
-  <li><b>..........</b></li>
+  <b>......................</b>
   <li><b>Scrum Master:</b> Oscar F. Lamprea</li>
   <li><b>Administradora de base de datos:</b> Jenny Vargas P.</li>
-  <li><b>Desarroladora:</b>Diana K. Ospina</li>
+  <li><b>DesarrolLadora:</b>Diana K. Ospina</li>
   </ul>
 
