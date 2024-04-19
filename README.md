@@ -9,6 +9,6 @@ Repositorio principal
   <b>......................</b>
   <li><b>Scrum Master:</b> Oscar F. Lamprea</li>
   <li><b>Administradora de base de datos:</b> Jenny Vargas P.</li>
-  <li><b>DesarrolLadora:</b>Diana K. Ospina</li>
+  <li><b>Desarrolladora:</b>Diana K. Ospina</li>
   </ul>
 
