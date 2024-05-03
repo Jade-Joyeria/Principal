@@ -15,6 +15,118 @@
     box-sizing: border-box;
 }  
 
+.joyero{
+   border: 1px solid var(--dorado);
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+}
+
+.joyero .header-joyero{
+    background-color: var(--dorado);
+    color: var(--dorado);
+    text-align: center;
+    padding: 10px;
+}
+
+.joyero h2{
+    color: var(--blanco);
+}
+
+
+.joyero .joyero-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+}
+
+.joyero .joyero-item img{
+    margin-right: 20px;
+}
+
+.joyero .joyero-item .joyero-item-titulo{
+   display: block;
+   font-weight: bold;
+   margin-bottom: 10px;
+   text-transform: uppercase; 
+}
+
+.joyero .joyero-item .selector-cantidad{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.joyero .joyero-item .joyero-item-cantidad{
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.joyero .joyero-item .selector-cantidad{
+    cursor: pointer;
+}
+
+.joyero .joyero-item .joyero-item-precio{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.joyero .joyero-item .btn-eliminar{
+    cursor: pointer;
+}
+
+.joyero .joyero-item .btn-eliminar i{
+    pointer-events: none;
+}
+
+.joyero-total{
+    background-color: var(--dorado);
+    padding: 30px;
+}
+
+.joyero-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.joyero-total .btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: var(--blanco);
+    color: #000;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.joyero-total .btn-pagar:hover{
+    scale: 1.1;
+}
+
+
 .seccion{
     display: flex;
     min-width: 100%;
@@ -28,11 +140,12 @@
 .seccion video{
     align-items: end;
     justify-content: center;
-    width: "320";
-    height:"140";
+    width: 650px;
+    height:470px;
     /*translateX(-50%) translateY(-50%);*/
     z-index: "-1%";
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-bottom: 40px;
 }
 
 .grilla{
@@ -41,7 +154,8 @@
    max-width: 1200;
    margin: auto;
    gap: 20px ;
-   grid-template-columns: repeat(3,200px); 
+   grid-template-columns: repeat(auto-fit, minmax(180px,180px)); 
+    padding-bottom: 50px;
 }
 
 .item{
@@ -51,6 +165,25 @@
 .item img{
     width: 100%;
     height: 120px;
+}
+
+.item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.2;
+}
+
+.item button{
+    padding: 1rem;
+    width: 80%;
+    background-color: var(--dorado);
+    color: var(--azul_oscuro);
+    border-radius: 5px;
+    margin-bottom: 5px;   
+}
+
+.item button:hover {
+    background-color: antiquewhite;
+    transition: all .3s;
 }
 
 .precio p:first-child {
@@ -75,10 +208,6 @@ h1{
        
 h2{
     color:var(--verde);
-    font-weight: normal;
-    font-style: italic;    
-    line-height: 0;
-    font-size: 0.5rem;
 }
 
 header{
@@ -92,14 +221,17 @@ header{
 }
 
 
-nav{
+.cinta nav{
+    display: flex;
+    justify-content: flex-end;
     background-color:var(--dorado);
-    padding:1em;
+    padding:15px;
     width:100%;
 }
        
-a{
+.cinta a{
     margin:0px 5%;
+    align-content: end;
     font-size: larger;
     color: var(--blanco);
     background-color: var(--dorado);            
@@ -128,9 +260,6 @@ img.index{
     height: 250px;
 }
 
-
-
-
 h6{
     background-color: var(--verde);
     color:var(--blanco);
@@ -144,12 +273,13 @@ footer{
     width: 100%;
     background-size: cover;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .siguenos{
     display: flex;
     justify-content: flex-end;
-    padding: 1px;
+    margin-bottom: 40px;
 }
 
 .iconos{
@@ -184,7 +314,6 @@ form{
     border-radius: 5px;
     box-shadow: 0 0 10px var(--azul_claro);
     background-color: var(--amarillo);
-    
 }
 
 button{
@@ -193,29 +322,4 @@ button{
     padding: 10px 15px;
     border-radius: 3px;
     cursor: pointer;
-}
-
-.ofertas{
-    max-width: 550px;
-    width: 100%;
-    margin: 40px auto;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-img.ofertas{
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-}
-
-p.ofertas{
-    color: var(--azul_oscuro);
-    font-weight: bold;
-}
-span.ofertas{
-    color: --rojo;
-    font-weight: bold;
-    font-size: 1rem;
 }
