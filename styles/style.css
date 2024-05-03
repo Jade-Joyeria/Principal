@@ -63,6 +63,10 @@
     margin-right: 25px;
 }
 
+.joyero .joyero-item .selector-cantidad :hover{
+    scale: 2;
+}
+
 .joyero .joyero-item .joyero-item-cantidad{
     border: none;
     font-size: 18px;
@@ -88,7 +92,11 @@
     cursor: pointer;
 }
 
-.joyero .joyero-item .btn-eliminar i{
+.joyero .joyero-item .btn-eliminar :hover{
+    scale: 2;
+}
+
+.joyero .joyero-item .selector-cantidad input{
     pointer-events: none;
 }
 
@@ -220,7 +228,6 @@ header{
     line-height: 0.5;
 }
 
-
 .cinta nav{
     display: flex;
     justify-content: flex-end;
@@ -236,8 +243,6 @@ header{
     color: var(--blanco);
     background-color: var(--dorado);            
 }
-
-
 
 article.productos{
     margin-right: 20px;
