@@ -328,3 +328,33 @@ button{
     border-radius: 3px;
     cursor: pointer;
 }
+
+.tu_joyero-total .j_btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: var(--dorado);
+    color: var(--blanco);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.tu_joyero-total h2{
+    color: black
+}
+  
+ .tu_joyero-total .j_btn-pagar:hover{
+     scale: 1.1;
+ }
+
+ .tu_joyero-total{
+    background-color: white; 
+    padding: 30px;
+ }
+ 

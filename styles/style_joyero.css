@@ -1,0 +1,128 @@
+.seccion_joyero{
+        display: flex;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin:auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+.tu_joyero{
+    border: 1px solid var(--dorado);
+     width: 50%;
+     margin-top: 30px;
+     border-radius: 10px;
+     overflow: hidden;
+     margin-bottom: auto;
+     /*position: sticky !important;*/
+     top: 0;
+     transition: .3s;
+ }
+ 
+ /*.tu_joyero .header-tu_joyero{
+     background-color: var(--dorado);
+     color: var(--dorado);
+     text-align: center;
+     padding: 10px;
+ }*/
+ 
+ .tu_joyero h2{
+     color: var(--blanco);
+ }
+ 
+ 
+ .tu_joyero .tu_joyero-item{
+     display: flex;
+     align-items: center;
+     position: relative;
+     border-bottom: 1px solid #666;
+     padding: 5px;
+ }
+ 
+ .tu_joyero .tu_joyero-item img{
+     margin-right: 100px;
+ }
+ 
+ .tu_joyero .tu_joyero-item .tu_joyero-item-titulo{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+ }
+ 
+ .tu_joyero .tu_joyero-item .selector-cantidad{
+     /*display: inline-block;*/
+     margin-right: 150px;
+ }
+ 
+ .tu_joyero .tu_joyero-item .selector-cantidad :hover{
+     scale: 2;
+ }
+ 
+ .tu_joyero .tu_joyero-item .joyero-item-cantidad{
+     border: none;
+     font-size: 18px;
+     background: transparent;
+     display: inline-block;
+     width: 30px;
+     padding: 5px;
+     text-align: center;
+ }
+ 
+ .tu_joyero .tu_joyero-item .selector-cantidad{
+     cursor: pointer;
+ }
+ 
+ .tu_joyero .tu_joyero-item .tu_joyero-item-precio{
+     font-weight: bold;
+     display: inline-block;
+     font-size: 18px;
+     margin-bottom: 5px;
+ }
+ 
+ .tu_joyero .tu_joyero-item .btn-eliminar{
+     cursor: pointer;
+ }
+ 
+ .tu_joyero .tu_joyero-item .btn-eliminar :hover{
+     scale: 2;
+ }
+ 
+ .tu_joyero .tu_joyero-item .selector-cantidad input{
+     pointer-events: none;
+ }
+ 
+ .tu_joyero-total{
+     background-color: var(--dorado);
+     padding: 30px;
+ }
+ 
+ .tu_joyero-total .fila{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 15px;
+     font-weight: bold;
+     margin-bottom: 5px;
+ }
+ 
+ .tu_joyero-total .btn-pagar{
+     display: block;
+     width: 100%;
+     border: none;
+     background: var(--blanco);
+     color: #000;
+     border-radius: 5px;
+     font-size: 18px;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+     transition: .3s;
+ }
+ 
+ .tu_joyero-total .btn-pagar:hover{
+     scale: 1.1;
+ }
+ 
