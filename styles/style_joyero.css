@@ -10,7 +10,8 @@
 
 .tu_joyero{
     border: 1px solid var(--blanco);
-     width: 50%;
+    display: inline-block;
+     width: 70%;
      margin-top: 30px;
      border-radius: 10px;
      overflow: hidden;
@@ -25,6 +26,7 @@
  }
  
  
+
  .tu_joyero .tu_joyero-item{
      display: flex;
      align-items: center;
@@ -34,7 +36,7 @@
  }
  
  .tu_joyero .tu_joyero-item img{
-     margin-right: 100%;
+     margin-right: 10%;
  }
  
  .tu_joyero .tu_joyero-item .tu_joyero-item-titulo{
@@ -44,7 +46,6 @@
  }
  
  .tu_joyero .tu_joyero-item .j_selector-cantidad{
-     display: inline-block;
      margin-right: 40px;
      align-items: center;
      cursor: pointer;
@@ -56,13 +57,13 @@
  }
  
  .tu_joyero .tu_joyero-item .tu_joyero-item-cantidad{
-     border: none;
-     font-size: 38px;
-     background: transparent;
-     display: inline-block;
-     width: 10px;
-     padding: 5px;
-     text-align: center;
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
 }
 
 .tu_joyero .tu_joyero-item .tu_joyero-item-precio{
