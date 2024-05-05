@@ -1,0 +1,89 @@
+/* Estilos de productos - administrador generales */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 1px;
+    padding: 10px;
+    background-color: #b6fd96;
+}
+
+header {
+    background-color: #1d8b07;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.formulario, .productos {
+    background-color: #7c7979;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    width: 40%;
+    min-width: 300px;
+}
+
+.formulario h2, .productos h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario label, .productos label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formulario input, .productos input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #089e0f;
+    border-radius: 5px;
+}
+
+.formulario button {
+    background-color: #000;
+    color: #05b905;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#mensaje {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos tabla de productos */
+.productos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.productos th, .productos td {
+    padding: 20px;
+    border: 4px solid #000000;
+}
+
+.productos th {
+    background-color: #3db10f;
+    color: #000000;
+    text-align: left;
+}
+
+.productos td {
+    background-color: #000000;
+}
