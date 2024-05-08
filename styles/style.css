@@ -55,7 +55,6 @@
    display: block;
    font-weight: bold;
    margin-bottom: 10px;
-   text-transform: uppercase; 
 }
 
 .joyero .joyero-item .selector-cantidad{
@@ -90,6 +89,7 @@
 
 .joyero .joyero-item .btn-eliminar{
     cursor: pointer;
+    background-color: none;
 }
 
 .joyero .joyero-item .btn-eliminar :hover{
@@ -156,14 +156,14 @@
     margin-bottom: 40px;
 }
 
-.grilla{
+.grilla-items{
    display: grid;
    justify-content: center;
    max-width: 1200;
    margin: auto;
    gap: 20px ;
-   grid-template-columns: repeat(auto-fit, minmax(180px,180px)); 
-    padding-bottom: 50px;
+   grid-template-columns: repeat(3, minmax(180px,180px)); 
+   padding-bottom: 50px;
 }
 
 .item{
@@ -183,8 +183,8 @@
 .item button{
     padding: 1rem;
     width: 80%;
-    background-color: var(--dorado);
-    color: var(--azul_oscuro);
+    /*background-color: var(--dorado);
+    color: var(--azul_oscuro);*/
     border-radius: 5px;
     margin-bottom: 5px;   
 }
@@ -194,8 +194,12 @@
     transition: all .3s;
 }
 
-.precio p:first-child {
-    text-decoration: line-through;
+.item span{
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    
 }
 
 .titulo{
@@ -321,11 +325,13 @@ form{
     background-color: var(--amarillo);
 }
 
-button{
-    background-color: var(--dorado);
-    color: var(--azul_oscuro);
-    padding: 10px 15px;
-    border-radius: 3px;
+.boton-item{
+    background-color: var(--blanco);
+    color: #000;
+    font-size: medium;
+    font-weight: bold;
+    padding: 15px 10px;
+    border-radius: 2px;
     cursor: pointer;
 }
 
@@ -358,3 +364,13 @@ button{
     padding: 30px;
  }
  
+ /*responsive*/
+ @media screen and (max-width: 850px){
+    .joyero{
+        display: block;
+    }
+
+    .joyero-items{
+        width: 100% !important;
+    }
+ }

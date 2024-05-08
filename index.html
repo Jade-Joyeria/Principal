@@ -3,7 +3,9 @@
 <head> 
     <meta charset="UTF-8">
     <title>Jade Joyeria</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="js/joyero.js" async></script>    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preload" href="styles/style.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -33,90 +35,73 @@
                 <h4>Los Mejores joyeros a tu servicio</h4>
                 <p>Los artesanos más finos del pais crearán piezas de calidad y elegancia acordes a tu belleza. Deja tus deseos en nuestras manos que nosotros los haremos realidad.</p>    
                 <p>. . . . . . . . . . . . . . . . . . . . . . . .</p>    
-                    <div class = "grilla">
+                    <div class = "grilla-items">
                         <div class="item">
-                            <img src="images/Productos/ANILLO_BLANCO.jpg" alt="Anillo Jenny Oro Blanco"/>
-                            <h3>Anillo Jenny en Oro Blanco</h3>
-                                <div class="precio">
-                                    <P>$3'500.000 CP</p>
-                                    <p>$2'500.000 CP</p>
-                                </div>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/ANILLO_BLANCO.jpg" class="img-item"/>
+                            <span class="titulo-item">Anillo Jenny en Oro Blanco</span>
+                            <span class="precio-item">$3500000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                         <div class="item">
-                            <img src="images/Productos/ANILLO_ZAFIRO.webp" alt="Anillo Diana Zafiro"/>
-                            <h3>Anillo Diana en oro blanco y Zafiro</h3>
-                                <div class="precio">
-                                    <p>$7'000.000 CP</p>
-                                    <p>$5'000.000 CP</p>
-                                </div>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/ANILLO_ZAFIRO.webp" class="img-item"/>
+                            <span class="titulo-item">Anillo Diana en oro blanco y Zafiro</span>
+                            <span class="precio-item">$5000000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                         <div class="item">
-                            <img src="images/Productos/CAD_ORO_AMARILLO.webp" alt="Cadena Adriana en oro"/>
-                            <h3>Cadena Adriana en oro  Amarillo</h3>
-                                <div class="precio">
-                                    <p>$7'000.000 CP</p>
-                                    <p>$6'000.000 CP</p>
-                                </div>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/CAD_ORO_AMARILLO.webp" class="img-item"/>
+                            <span class="titulo-item">Cadena Adriana oro amarillo</span>
+                            <span class="precio-item">$5000000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                         <div class="item">
-                            <img src="images/Productos/CAD_ORO_BLANCO.webp" alt="Cadena Turquía en oro blanco"/>
-                            <h3>Cadena Turquía en oro blanco</h3>
-                                <div class="precio">
-                                    <p>$7'000.000 CP</p>
-                                    <p>$6'000.000 CP</p>
-                                </div>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/CAD_ORO_BLANCO.webp" class="img-item"/>
+                            <span class="titulo-item">Cadena Turquía oro blanco</span>
+                            <span class="precio-item">$5500000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                         <div class="item">
-                            <img src="images/Productos/DIJE_AZUL.webp" alt="Dije opalo azul"/>
-                            <h3>Dije opalo azul</h3>
-                            <h3>.</h3>
-                                    <p>$2'000.000 CP</p>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/DIJE_AZUL.webp" class="img-item"/>
+                             <span class="titulo-item">Dije opalo azul</span>
+                            <span class="precio-item">$2000000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                         <div class="item">
-                            <img src="images/Productos/DIJE_MARIA.webp" alt="Dije amor de Maria"/>
-                            <h3>Dije amor de Maria</h3>
-                            <h3>.</h3>
-                                    <p>$2'000.000 CP</p>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/DIJE_MARIA.webp" class="img-item"/>
+                            <span class="titulo-item">Dije amor de Maria</span>
+                            <span class="precio-item">$2000000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                         <div class="item">
-                            <img src="images/Productos/PULSERA_ORO_AMARILLO.webp" alt="Pulsera de oro amarillo"/>
-                            <h3>Pulsera estrellas en oro amarillo</h3>
-                                <div class="precio">
-                                    <p>$4'000.000 CP</p>
-                                    <p>$3'000.000 CP</p>
-                                </div>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/PULSERA_ORO_AMARILLO.webp" class="img-item"/>
+                            <span class="titulo-item">Pulsera estrellas oro amarillo</span>
+                            <span class="precio-item">$5000000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                         <div class="item">
-                            <img src="images/Productos/PULSERA_ORO_BLANCO.webp" alt="Pulsera de oro blanco"/>
-                            <h3>Pulsera angel en oro blanco</h3>
-                                <div class="precio">
-                                    <p>$4'500.000 CP</p>
-                                    <p>$3'500.000 CP</p>
-                                </div>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/PULSERA_ORO_BLANCO.webp" class="img-item"/>
+                            <span class="titulo-item">Pulsera Angel oro blanco</span>
+                            <span class="precio-item">$5000000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                         <div class="item">
-                            <img src="images/Productos/ROLEX_CAFE.webp" alt="Rolex Geneve Hombre"/>
-                            <h3>Rolex Geneve Hombre correa en cuero</h3>
-                                    <p>$13'500.000 CP</p>
-                            <button>Agregar a tu joyero</button>
+                            <img src="images/Productos/ROLEX_CAFE.webp" class="img-item"/>
+                            <span class="titulo-item">Rolex Venecia Diamantes</span>
+                            <span class="precio-item">$13500000</span>
+                            <button class="boton-item">Agregar...</button>
                         </div>
                     </div>
             </div>
+            
             <video src="videos/joyas_presentacion.mp4" type="video/mp4" autoplay loop muted poster="images/jade joyería.jpeg">Tu navegador no soporta la etiqueta de video</video>
-            <div class="joyero">
+            
+            <div class="joyero" id="joyero">
                 <div class="header-joyero">
                      <h2>Tu Joyero</h2>
                 </div>    
             <div class="joyero-items">
-               <div class="joyero-item">
+               <!--  
+                <div class="joyero-item">
                 <img src="images/Productos/ANILLO_BLANCO.jpg" alt="" width="80px"/>
                  <div class="joyero-item-detalles">
                     <span class="joyero-item-titulo">Anillo Blanco</span>
@@ -131,7 +116,7 @@
                 <span class="btn-eliminar">
                     <i class="fa-solid fa-trash"></i>
                 </span>
-            </div>
+                </div>
                 <div class="joyero-item">
                     <img src="images/Productos/ANILLO_ZAFIRO.webp" alt="" width="80px"/>
                      <div class="joyero-item-detalles">
@@ -146,7 +131,7 @@
                     <span class="btn-eliminar">
                         <i class="fa-solid fa-trash"></i>
                     </span>
-            </div>
+                </div>
                 <div class="joyero-item">
                         <img src="images/Productos/CAD_ORO_AMARILLO.webp" alt="" width="80px"/>
                          <div class="joyero-item-detalles">
@@ -176,7 +161,7 @@
                 <span class="btn-eliminar">
                     <i class="fa-solid fa-trash"></i>
                 </span>
-            </div>
+                </div>
                 <div class="joyero-item">
                     <img src="images/Productos/DIJE_AZUL.webp" alt="" width="80px"/>
                      <div class="joyero-item-detalles">
@@ -222,7 +207,7 @@
                         <i class="fa-solid fa-trash"></i>
                     </span>
                 </div>
-                    <div class="joyero-item">
+                <div class="joyero-item">
                         <img src="images/Productos/PULSERA_ORO_BLANCO.webp" alt="" width="80px"/>
                          <div class="joyero-item-detalles">
                             <span class="joyero-item-titulo">Pulsera Blanca</span>
@@ -236,7 +221,7 @@
                         <span class="btn-eliminar">
                             <i class="fa-solid fa-trash"></i>
                         </span>
-                    </div>    
+                </div>    
                 <div class="joyero-item">
                 <img src="images/Productos/ROLEX_CAFE.webp" alt="" width="80px"/>
                      <div class="joyero-item-detalles">
@@ -252,11 +237,12 @@
                     <i class="fa-solid fa-trash"></i>
                 </span>
                 </div>
+            -->
             </div>
             <div class="joyero-total">
                 <div class="fila">
                     <h2>Tu compra</h2>
-                    <span class="joyero-precio-total">$10.000.000</span>
+                    <span class="joyero-precio-total">$0</span>
                 </div>
                     <button class="btn-pagar">Pagar...<i class="fa-solid fa-bag-shopping"></i></button>
             </div>
