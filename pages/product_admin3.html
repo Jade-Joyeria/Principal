@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Productos - Joyería Jade</title>
+    <script src="https://kit.fontawesome.com/3904928071.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="productos_admin3.css">
+    
+
+</head>
+
+<body>
+
+
+    <header>
+       
+    </header>
+
+    <div class="cinta">
+        <nav>
+            <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="../pages/entrada_admin.html"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </div>
+    
+   <div class="contenedor">
+    <h1 style="text-align: center;">Ingreso de Productos</h1>
+   </div>
+
+    <main>
+        <section class="formulario">
+            <h2>Ingresar Nuevo Producto</h2>
+            <form id="formularioProducto">
+                <label for="fecha">FECHA:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <label for="nombre">NOMBRE:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="idventa">ID VENTA:</label>
+                <input type="text" id="idventa" name="idventa" required>
+                <label for="valor">VALOR:</label>
+                <input type="number" id="valor" name="valor" required>
+                <label for="descripcion">DESCRIPCION:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+                <label for="cantidad">CANTIDAD:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+                <button type="submit">INSERTAR PRODUCTO</button> <!-- Para ingresar un producto -->
+               
+
+
+            </form>
+            <div id="mensaje"></div>
+        </section>
+
+        <section class="productos">
+            <h2>Productos en el Sistema</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <br>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>ID Venta</th>
+                        <th>Valor</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaProductos">
+                    <!-- Aquí se insertarán dinámicamente los productos -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <div class="letra-parrafo">
+        <p> 💎 Joyería Jade</p>
+    </div>
+
+    <footer>
+        <h6>punto fisico
+            Cra 7 No. 68-62 bogota-colombia
+            Contactos:5698554588</h6>
+        <img src="../images/jko.jpg" height="50px" width="50px">
+    </footer>
+
+    <script src="productos_admin3.js"></script>
+    <script src="productos_admin3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+/* Estilos de productos - administrador generales */
+/* Estilos generales */
+
+
+
+/* styles.css de color de letras */
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(255, 255, 255);
+}
+
+label[for="fecha"] {
+    color: rgb(2, 128, 19); /* Cambia el color del texto a grb para el label con for="frecha" */ 
+}
+
+label[for="nombre"] {
+    color: rgb(2, 128, 19); 
+}
+
+label[for="idventa"] {
+    color:rgb(2, 128, 19); 
+}
+
+label[for="valor"] {
+    color: rgb(2, 128, 19); 
+}
+
+label[for="descripcion"] {
+    color: rgb(2, 128, 19); 
+}
+
+label[for="cantidad"] {
+    color: rgb(2, 128, 19); 
+}
+
+.letra-parrafo{
+    color: rgb(255, 252, 252);
+    margin: left 50px; ;
+}
+
+
+
+/* styles.css */
+html, body {
+    margin: 10px;
+    padding: 20px;
+    background-color: #000000;
+
+}
+
+
+body {
+    background-image: url(img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.contenedor{ font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 20px;
+    background-color: #000000;
+    
+}
+
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px ;
+   
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.formulario, .productos {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.829);
+    width: 40%;
+    min-width: 300px;
+}
+
+.formulario h2, .productos h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario label, .productos label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formulario input, .productos input, .formulario textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #089e0f;
+    border-radius: 5px;
+}
+
+.formulario button {
+    background-color: #000;
+    color: #05b905;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#mensaje {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos tabla de productos */
+.productos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.productos th, .productos td {
+    padding: 20px;
+    border: 4px solid #000000;
+}
+
+.productos th {
+    background-color:  #03db648a;
+    color: #000000;
+    text-align: left;
+}
+
+.productos td {
+    background-color: #ffffff;
+}
