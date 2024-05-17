@@ -34,6 +34,8 @@ function auth(req, res){
     });
 }
 
+
+
 function register(req, res){
     if(req.session.loggedin != true){
         res.render('login/register');
