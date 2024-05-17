@@ -39,11 +39,16 @@ function ready(){
 }
 
 //Eliminamos todos los elementos del Joyero pero no lo ocultamos, se necesita 
+
 function pagarClicked(){
-    alert("Gracias por tu fina elección, ahora seras dirigído a la sección de pagos");
+    if(document.getElementsByClassName('joyero-precio-total')[0].innerText == '$'+ 0){
+    alert("Sabemos que somos tus preferidos... pero debes escoger alguna joya para ir la boton de pagos")
+    }else{
+    alert("Gracias por tu fina elección, ahora seras dirigído a la sección de pagos");    
     window.location.href = "pages/joyero.html";
     actualizarTotalJoyero();
     }
+}
 //Funcion controla el boton clickeado de agregar al Joyero - preuba ok
 function agregarAlJoyeroClicked(event){
     var button = event.target;

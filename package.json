@@ -1,0 +1,24 @@
+{
+  "name": "principal",
+  "version": "1.0.0",
+  "description": "Repositorio principal\r <ul>\r   <li><b>Cliente:</b> Joyeria \"jade accesorios\"</li>\r   <li><b>Fecha de inicio:</b> 📅 17/04/2024</li>\r   <li><b>Fecha de entrega:</b> 📅 00/00/0000</li>\r   <li><b>Estado:</b> 🚧 En desarrollo</li>\r   <li><b>Version:</b> 🚀 1</li>\r   <b>......................</b>\r   <li><b>Scrum Master:</b> Oscar F. Lamprea</li>\r   <li><b>Administradora de base de datos:</b> Jenny Vargas P.</li>\r   <li><b>Desarrolladora:</b>Diana K. Ospina</li>\r   </ul>",
+  "main": "index.html",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.18.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.0"
+  }
+}
