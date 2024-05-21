@@ -45,10 +45,11 @@ function pagarClicked(){
     alert("Sabemos que somos tus preferidos... pero debes escoger alguna joya para ir la boton de pagos")
     }else{
     alert("Gracias por tu fina elección, ahora seras dirigído a la sección de pagos");    
-    window.location.href = "pages/joyero.html";
+    window.location.href = "http://localhost:4400";
     actualizarTotalJoyero();
     }
 }
+
 //Funcion controla el boton clickeado de agregar al Joyero - preuba ok
 function agregarAlJoyeroClicked(event){
     var button = event.target;
@@ -56,12 +57,11 @@ function agregarAlJoyeroClicked(event){
     var titulo = item.getElementsByClassName('titulo-item')[0].innerText;
     var precio = item.getElementsByClassName('precio-item')[0].innerText;
     var imagenSrc = item.getElementsByClassName('img-item')[0].src;
-    console.log(imagenSrc);
-
     agregarItemAlJoyero(titulo, precio, imagenSrc);
 
     hacerVisibleJoyero();
 }
+
 
 //Funcion que hace visible el Joyero - ok
 function hacerVisibleJoyero(){
@@ -124,6 +124,7 @@ function agregarItemAlJoyero(titulo, precio, imagenSrc){
     //Actualizamos total
     actualizarTotalJoyero();
 }
+exports.agregarItemAlJoyero = agregarItemAlJoyero;
 //Aumento en uno la cantidad del elemento seleccionado
 function sumarCantidad(event){
     var buttonClicked = event.target;

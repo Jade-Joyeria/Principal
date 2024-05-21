@@ -10,6 +10,14 @@ CREATE TABLE IF NOT EXISTS `jadejoyeria`.`clientes` (
   PRIMARY KEY (`idcliente`, `user`))
 ENGINE = InnoDB;
 
+CREATE TABLE `jadejoyeria`.`tmpventas` (
+  `idtmpVentas` INT NOT NULL AUTO_INCREMENT,
+  `titulo` VARCHAR(45) IS NOT NULL,
+  `precio` INT IS NOT NULL,
+  `cantidad` INT IS NOT NULL
+  PRIMARY KEY (`idtmpVentas`))
+ENGINE = InnoDB;
+
 CREATE TABLE IF NOT EXISTS `jadejoyeria`.`ventas` (
   `idventas` INT NOT NULL AUTO_INCREMENT,
   `fecha` DATE NULL,

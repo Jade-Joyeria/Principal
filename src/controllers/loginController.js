@@ -1,6 +1,20 @@
 //const { hash } = require("bcrypt");
 const { connect } = require("../routes/login");
 const bcrypt = require("bcrypt");
+const controller = {};
+
+controller.list = (req, res) => {
+    req.getConnection((err, conn) => {
+        conn.query('SELECT * FROM productos', (err, productos) => {
+            if (err) {
+                res.json(err);
+            }else{
+                console.log(productos);
+                };
+            });
+        });
+    };
+
 
 function login(req, res){
     if(req.session.loggedin != true){
@@ -22,9 +36,14 @@ function auth(req, res){
                 } else {
                     req.session.loggedin = true;
                     req.session.name = element.nombreUsuario;
+                    console.log(element.nombreUsuario);
+                    req.getConnection((err, conn) => {
+                    conn.query('SELECT * FROM productos', (err, productos) =>{
+                        console.log(productos);
+                    });
+                });
                     res.redirect('/');
                 }
-                console.log(element.nombreUsuario);
             });
         });
     }else{
@@ -80,4 +99,5 @@ module.exports = {
     storeUser,
     auth,
     logout,
+    controller,
 }
