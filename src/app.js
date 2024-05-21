@@ -6,7 +6,7 @@ const session = require('express-session');
 const bodyParser = require('body-parser')
 
 const loginRoutes = require('./routes/login');
-/*const { redirect } = require('express/lib/response');*/
+const { redirect } = require('express/lib/response');
 
 const app = express();
 app.set('port', 4400);
