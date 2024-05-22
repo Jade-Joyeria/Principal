@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>nombre</th>
+                        <th>descripcion</th>
+                        <th>valor</th>
+                        <th>cantidad</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    {{#if data}}
+                           {{#each data}}
+                            <tr>
+                                <td>{{this.nombre}}</td>
+                                <td>{{this.descripcion}}</td>
+                                <td>{{this.valor}}</td>
+                                <td>{{this.cantidad}}</td>
+                            </tr>
+                        {{/each}}
+                        {{else}}
+                        <td>No hay productos en la base de datos</td>
+                    {{/if}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

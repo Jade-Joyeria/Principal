@@ -1,19 +1,20 @@
 //const { hash } = require("bcrypt");
 const { connect } = require("../routes/login");
 const bcrypt = require("bcrypt");
-const controller = {};
+const productos = {};
 
-controller.list = (req, res) => {
+productos.list = (req, res) => {
     req.getConnection((err, conn) => {
         conn.query('SELECT * FROM productos', (err, productos) => {
             if (err) {
                 res.json(err);
-            }else{
-                console.log(productos);
-                };
+            }
+            res.render('productos', {
+                data: productos
+                });
             });
         });
-    };
+    }
 
 
 function login(req, res){
@@ -28,32 +29,24 @@ function auth(req, res){
     const data = req.body;
     req.getConnection((err, conn) => {
         conn.query('SELECT * FROM clientes where user = ?', [data.user], (err,userdata) => {
-           if(userdata.length > 0) {
-            userdata.forEach(element => {
-                bcrypt.compare(data.password, element.password, (err, isMatch) => {
-                if(!isMatch){
-                    res.render('login/index', {error: 'Ayudamos a proteger tus compras... Contraseña incorreta'});
-                } else {
-                    req.session.loggedin = true;
-                    req.session.name = element.nombreUsuario;
-                    console.log(element.nombreUsuario);
-                    req.getConnection((err, conn) => {
-                    conn.query('SELECT * FROM productos', (err, productos) =>{
-                        console.log(productos);
+            if(userdata.length > 0) {
+                userdata.forEach(element => {
+                    bcrypt.compare(data.password, element.password, (err, isMatch) => {
+                        if(!isMatch){
+                            res.render('login/index', {error: 'Ayudamos a proteger tus compras... Contraseña incorreta'});
+                        }else{
+                            req.session.loggedin = true;
+                            req.session.name = element.nombreUsuario;
+                            res.redirect('/');        
+                        }    
                     });
                 });
-                    res.redirect('/');
-                }
-            });
+            }else{
+                res.render('login/index', {error: 'Usuario no encontrado'});    
+            }
         });
-    }else{
-        res.render('login/index', {error: 'Usuario no encontrado'});
-    }
-});
     });
 }
-
-
 
 function register(req, res){
     if(req.session.loggedin != true){
@@ -99,5 +92,5 @@ module.exports = {
     storeUser,
     auth,
     logout,
-    controller,
+    productos
 }
