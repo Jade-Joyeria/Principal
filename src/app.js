@@ -8,13 +8,22 @@ const bodyParser = require('body-parser')
 const loginRoutes = require('./routes/login');
 const { redirect } = require('express/lib/response');
 
+
 const app = express();
 app.set('port', 4400);
 
+
 app.set('views', __dirname + '/views');
-app.engine('.hbs', engine({
+
+app.engine('.hbs', engine({       //aqui se hacen las funciones para el hbs las entienda
 extname: '.hbs',
+helpers: {
+  eq: function (a, b) {
+      return a === b;
+  }
+}
 }));
+
 app.set('view engine', 'hbs');
 
 app.use(bodyParser.urlencoded({
@@ -28,7 +37,7 @@ user: 'root',
 password: '2374',
 port: 3306,
 database: 'jadejoyeria'
-}));
+}, 'single'));
 
 app.use(session({
     secret: 'secret',

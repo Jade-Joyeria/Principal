@@ -1,2 +1,6 @@
-<h1 class="text-center my-24 text-xl">Aquí están tus mas lujosos gustos {{name}}</h1>
 
+{{#if (eq name "Administrador")}}
+<h1 class="text-center my-24 text-xl">Bienvenido {{name}} a su area de trabajo...</h1>
+{{else}}
+<h1 class="text-center my-24 text-xl">Gracias {{name}} por confiar tu buen gusto en nosotros...</h1>
+{{/if}}

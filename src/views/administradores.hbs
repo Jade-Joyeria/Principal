@@ -1,0 +1,31 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<h1 class="text-center my-24 text-xl">Aqui estamos los que realmente trabajamos...</h1>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>idAdmin</th>
+                        <th>user</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    {{#if data}}
+                           {{#each data}}
+                            <tr>
+                                <td>{{this.idAdmin}}</td>
+                                <td>{{this.user}}</td>
+                            </tr>
+                        {{/each}}
+                        {{else}}
+                        <td>No hay admin en la base de datos</td>
+                    {{/if}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

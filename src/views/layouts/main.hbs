@@ -6,6 +6,9 @@
 
 
     <title>Login Jade Joyería</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet"
@@ -22,13 +25,28 @@
       </div>
 
       <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
-        {{#if name}}
-        <p>{{name}}</p>
-
+        
+        {{#if (eq name "Administrador")}}
         <li class="nav-item px-4">
-          <a href="/productos" class="nav-link font-semibold bg-green-700 hover:bg-red-700 py-3 px-4 rounded-md">productos</a>
+          <a href="/productos" class="nav-link font-semibold bg-green-500 hover:bg-red-700 py-3 px-4 rounded-md">Productos</a>
         </li>
 
+        <li class="nav-item px-4">
+          <a href="/clientes" class="nav-link font-semibold bg-green-500 hover:bg-red-700 py-3 px-4 rounded-md">Clientes</a>
+        </li>
+
+         <li class="nav-item px-4">
+          <a href="/Administradores" class="nav-link font-semibold bg-green-500 hover:bg-red-700 py-3 px-4 rounded-md">Administradores</a>
+        </li>
+
+        <li class="nav-item px-4">
+          <a href="/logout" class="nav-link font-semibold bg-red-500 hover:bg-red-700 py-3 px-4 rounded-md">Logout</a>
+        </li>
+
+         {{else}}
+
+        {{#if name}}
+        <p>{{name}}</p>
         
         <li class="nav-item px-4">
           <a href="/logout" class="nav-link font-semibold bg-red-500 hover:bg-red-700 py-3 px-4 rounded-md">Logout</a>
@@ -43,6 +61,7 @@
           <a href="/register" class="nav-link font-semibold border-2 border-white hover:bg-white hover:text-green-700 py-3
             px-4 rounded-md">Registrate</a>
         </li>
+        {{/if}}
         {{/if}}
       </ul>
     </nav>
